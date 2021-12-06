@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ContentContext from '../../context/Content/ContentContext'
+import { ContentContext } from '../../context/Content/ContentProvider'
 import Canal from './canal/Canal'
 import Home from './home/Home'
 

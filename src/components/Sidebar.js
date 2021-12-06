@@ -16,7 +16,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import { useStyles } from "../styles/Sidebar";
 import { Link } from "react-router-dom";
 // Context
-import ContentContext from "../context/Content/ContentContext";
+import { ContentContext } from '../context/Content/ContentProvider'
 // logo
 import logo from '../assets/logo.jpg'
 

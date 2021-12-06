@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import ContentContext from "./ContentContext";
+import React, { useState, createContext } from "react";
+
+const ContentContext = createContext()
 
 const ContentProvider = ({ children }) => {
   const [content, setContent] = useState("HOME");
@@ -27,4 +28,5 @@ const ContentProvider = ({ children }) => {
   );
 };
 
+export { ContentContext } 
 export default ContentProvider;
