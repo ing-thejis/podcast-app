@@ -5,7 +5,8 @@ export const useStyles = makeStyles({
         color: '#fff',
         backgroundColor: '#000',
         border: '1px solid #000',
-        height: '100%',
+        height: '100vh',
+        
         // position: 'fixed',
     
         // '@media(minWidth: 600px)': {

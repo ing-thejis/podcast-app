@@ -3,9 +3,13 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles({
     container: {
         color: '#fff',
-        backgroundColor: '#333',
+        backgroundColor: '#111',
         padding: 0,
-        border: '1px solid #000'
+        border: '1px solid #000',
+    },
+    btnNav: {
+        color: '#fff',
+        borderRadius: '100%',
     },
     button: {
         position: 'absolute',
@@ -13,7 +17,10 @@ export const useStyles = makeStyles({
         backgroundColor: 'rgb(2,2,2)',
         borderRadius: '20px',
         padding: '5px',
-        margin: '5px'
+        margin: '5px',
+        '&:hover': {
+            backgroundColor: '#444'
+        }
     },
     verTodos: {
         float: 'right',
@@ -37,5 +44,10 @@ export const useStyles = makeStyles({
             backgroundColor: 'rgb(87,87,87)',
             Transition: '1s'
         }
+    },
+    containerContent: {
+        display: 'flex',
+        flexFlow: 'row wrap',
+        margin: '40px'
     }
 })
