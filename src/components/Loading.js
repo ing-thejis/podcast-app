@@ -1,4 +1,4 @@
-import { CircularProgress } from '@material-ui/core'
+import { CircularProgress, Modal } from '@material-ui/core'
 import React from 'react'
 
 const Loading = () => {
@@ -10,8 +10,10 @@ const Loading = () => {
             alignItems: 'center',
             marginTop: '200px'
         }}>
+            
             <CircularProgress />
             <h3>Loading . . .</h3>       
+        
         </div>
     )
 }
