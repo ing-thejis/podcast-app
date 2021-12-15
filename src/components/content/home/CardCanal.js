@@ -1,6 +1,7 @@
 import { Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core'
 import React, {useContext} from 'react'
-import {ContentContext} from '../../../context/content/ContentProvider'
+import { CanalContext } from '../../../context/canal/CanalProvider'
+import { ContentContext } from '../../../context/content/ContentProvider'
 import { useStyles } from '../../../styles/StyleCardCanal'
 
 const CardCanal = (props) => {
@@ -8,8 +9,7 @@ const CardCanal = (props) => {
 
     const handleOnClick = () => {
         handleContent('CANAL')
-        console.log(props.id)
-        // requestGetId(props.id)
+        console.log(props.id)        
     }
 
     const { handleContent } = useContext(ContentContext)
