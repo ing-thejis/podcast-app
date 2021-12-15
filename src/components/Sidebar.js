@@ -13,10 +13,10 @@ import CollectionsBookmarkIcon from "@material-ui/icons/CollectionsBookmark";
 import AddBoxIcon from "@material-ui/icons/AddBox";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 // Styles
-import { useStyles } from "../styles/Sidebar";
+import { useStyles } from "../styles/StyleSidebar";
 import { Link } from "react-router-dom";
 // Context
-import { ContentContext } from '../context/Content/ContentProvider'
+import { ContentContext } from '../context/content/ContentProvider'
 // logo
 import logo from '../assets/logo.jpg'
 
