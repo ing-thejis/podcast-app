@@ -5,10 +5,13 @@ const Loading = () => {
     return (
         <div style={{
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginTop: '200px'
         }}>
-            <CircularProgress />          
+            <CircularProgress />
+            <h3>Loading . . .</h3>       
         </div>
     )
 }

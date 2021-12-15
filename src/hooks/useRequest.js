@@ -18,14 +18,24 @@ const useRequest = () => {
     }
 
     useEffect(() => {
-        requestGET()
+        setTimeout(requestGET(), 1000)
     }, [])
 
-    
+    const requestGetId = async (id) => {
+        await axios.get(baseURL+id)
+        .then(response => {
+            // setChannels(response.data.body.id)
+            console.log(response.data.body)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }
 
     return {
         channels,
-        requestGET
+        requestGET,
+        requestGetId
     }
 }
 

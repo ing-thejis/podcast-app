@@ -8,7 +8,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 // styles
-import { useStyles } from "../../../styles/Home";
+import { useStyles } from "../../../styles/StyleHome";
 
 const Home = () => {
 
@@ -68,7 +68,7 @@ const Home = () => {
                     title={channel.title}
                   />
                 </Paper> 
-              : <p></p>
+              : <p key={channel.id}></p>
             }
             </>
         ))
